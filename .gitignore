@@ -1,0 +1,64 @@
+# =====================
+# .NET build artifacts
+# =====================
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# =====================
+# User-specific files
+# =====================
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =====================
+# IDEs / editors
+# =====================
+.vs/
+.vscode/
+.idea/
+*.iml
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# =====================
+# Logs / test results
+# =====================
+*.log
+TestResults/
+coverage/
+coverage.cobertura.xml
+*.trx
+
+# =====================
+# OS junk
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# NuGet
+# =====================
+*.nupkg
+# usually keep packages via restore; don't commit package folders
+**/packages/
+
+# =====================
+# Local databases (SQLite)
+# =====================
+*.db
+*.db-shm
+*.db-wal
+
+# =====================
+# App settings / secrets
+# =====================
+appsettings.Development.json
+secrets.json

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLedger.App", "BankLedger.App\BankLedger.App.csproj", "{D3C08556-5DAF-4680-A095-BE23C2F2C965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLedger.App", "src/BankLedger.App\BankLedger.App.csproj", "{D3C08556-5DAF-4680-A095-BE23C2F2C965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLedger.Tests", "BankLedger.Tests\BankLedger.Tests.csproj", "{FA190A77-8E5C-4FD2-AA5D-7BCEC9579796}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLedger.Tests", "tests/BankLedger.Tests\BankLedger.Tests.csproj", "{FA190A77-8E5C-4FD2-AA5D-7BCEC9579796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

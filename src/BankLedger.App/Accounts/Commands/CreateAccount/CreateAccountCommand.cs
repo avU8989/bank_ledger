@@ -1,4 +1,4 @@
-namespace BankLedger.App.Accounts.Create;
+namespace BankLedger.App.Accounts.Commands.CreateAccount;
 
 using MediatR;
 using BankLedger.Core.Accounts;

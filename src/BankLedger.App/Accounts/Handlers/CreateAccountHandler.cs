@@ -36,28 +36,16 @@ public sealed class CreateAccountHandler : IRequestHandler<CreateAccountCommand,
 
         //Logic
 
-        //1. Validate the command
-        //TODO - later add validation middleware and move validation logic to a separate validator class
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            throw new ArgumentException(nameof(request.Name), "Account name cannot be empty");
-        }
-
-        if (request.InitialBalance < 0m)
-        {
-            throw new ArgumentException(nameof(request.InitialBalance), "Initial balance cannot be negative");
-        }
+        //1. Validate the command -- will be handled by fluent validation
 
         //generate iban
         var iban = _ibanGenerator.GenerateIban();
-
-
 
         //2. Create the account
         var account = _accountFactory.Create(
             name: request.Name,
             type: request.Type,
-            initialBalance: request.InitialBalance ?? 0m,
+            initialBalance: 0m,
             iban: iban,
             currency: request.Currency
         );

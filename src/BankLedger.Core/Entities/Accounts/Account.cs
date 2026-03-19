@@ -32,17 +32,17 @@ public sealed class Account
         // Add any necessary validation logic here
         if (string.IsNullOrWhiteSpace(name))
         {
-            throw new ArgumentException(nameof(name), "Account name cannot be empty");
+            throw new ArgumentException("Account name cannot be empty", nameof(name));
         }
 
         if (balance < 0m)
         {
-            throw new ArgumentException(nameof(balance), "Initial balance cannot be negative");
+            throw new ArgumentException("Initial balance cannot be negative", nameof(balance));
         }
 
         if (string.IsNullOrWhiteSpace(iban))
         {
-            throw new ArgumentException(nameof(iban), "IBAN cannot be empty");
+            throw new ArgumentException("IBAN cannot be empty", nameof(iban));
         }
 
         return new Account(name, type, balance, iban, status, currency, monthlyFee, overdraftLimit, interestRate);

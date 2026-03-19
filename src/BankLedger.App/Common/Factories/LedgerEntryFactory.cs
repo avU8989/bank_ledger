@@ -1,8 +1,8 @@
 
-using BankLedger.Core.Ledger;
-using BankLedger.Core.Transactions;
 namespace BankLedger.Core.Common.Factories;
 
+using BankLedger.Core.Ledger;
+using BankLedger.Core.Transactions;
 public static class LedgerEntryFactory
 {
     //static method to create Ledger Entries

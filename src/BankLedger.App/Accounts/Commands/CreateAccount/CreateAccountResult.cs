@@ -1,3 +1,3 @@
-namespace BankLedger.App.Accounts.Create;
+namespace BankLedger.App.Accounts.Commands.CreateAccount;
 
 public sealed record CreateAccountResult(Guid AccountId);

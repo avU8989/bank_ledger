@@ -34,10 +34,6 @@ public sealed class CreateAccountHandler : IRequestHandler<CreateAccountCommand,
     public async Task<CreateAccountResult> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
     {
 
-        //Logic
-
-        //1. Validate the command -- will be handled by fluent validation
-
         //generate iban
         var iban = _ibanGenerator.GenerateIban();
 

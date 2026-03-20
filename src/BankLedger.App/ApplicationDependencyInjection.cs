@@ -1,4 +1,3 @@
-using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BankLedger.App.DependencyInjection;
@@ -12,6 +11,8 @@ public static class ApplicationDependencyInjection
             cfg.RegisterServicesFromAssembly(typeof(ApplicationDependencyInjection).Assembly);
             cfg.AddOpenBehavior(typeof(ValidationBehaviour<,>));
         });
+
+        services.AddScoped<AccountLookupService>();
 
         services.AddValidatorsFromAssemblyContaining(typeof(ApplicationDependencyInjection), ServiceLifetime.Transient);
 
